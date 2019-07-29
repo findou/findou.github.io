@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on My New Hugo Site</title>
+    <title>Posts on findou site</title>
     <link>https://findou.github.io/post/</link>
-    <description>Recent content in Posts on My New Hugo Site</description>
+    <description>Recent content in Posts on findou site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 29 Jul 2019 13:47:01 +0800</lastBuildDate>
@@ -19,8 +19,8 @@
       <guid>https://findou.github.io/post/blog1/</guid>
       <description>1：将下载的ThinkPHP文件放到网站根目录下
 2：配置入口文件index.php
-// 定义应用目录 define(&amp;lsquo;APP_PATH&amp;rsquo;,&amp;lsquo;./Application/&amp;rsquo;);
-// 引入ThinkPHP入口文件 require &amp;lsquo;./ThinkPHP/ThinkPHP.php&amp;rsquo;;
+&amp;rdquo;&amp;rsquo; // 定义应用目录 define(&amp;lsquo;APP_PATH&amp;rsquo;,&amp;lsquo;./Application/&amp;rsquo;);
+// 引入ThinkPHP入口文件 require &amp;lsquo;./ThinkPHP/ThinkPHP.php&amp;rsquo;; &amp;ldquo;&amp;rsquo;
 定义应用目录中的app_path 配置为Application，在浏览器中打开网站，会自动在根目录下生成Application目录
 3：可以在\Application\Home\Conf\config.php目录下配置数据库，参考ThinkPHP\Conf\convention.php文件中的数据库配置方法，填入配置信息
 /* 数据库设置 */ &#39;DB_TYPE&#39; =&amp;gt; &#39;&#39;, // 数据库类型 &#39;DB_HOST&#39; =&amp;gt; &#39;&#39;, // 服务器地址 &#39;DB_NAME&#39; =&amp;gt; &#39;&#39;, // 数据库名 &#39;DB_USER&#39; =&amp;gt; &#39;&#39;, // 用户名 &#39;DB_PWD&#39; =&amp;gt; &#39;&#39;, // 密码 &#39;DB_PORT&#39; =&amp;gt; &#39;&#39;, // 端口 &#39;DB_PREFIX&#39; =&amp;gt; &#39;&#39;, // 数据库表前缀 &#39;DB_PARAMS&#39; =&amp;gt; array(), // 数据库连接参数 &#39;DB_DEBUG&#39; =&amp;gt; TRUE, // 数据库调试模式 开启后可以记录SQL日志 &#39;DB_FIELDS_CACHE&#39; =&amp;gt; true, // 启用字段缓存 &#39;DB_CHARSET&#39; =&amp;gt; &#39;utf8&#39;, // 数据库编码默认采用utf8 &#39;DB_DEPLOY_TYPE&#39; =&amp;gt; 0, // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器) &#39;DB_RW_SEPARATE&#39; =&amp;gt; false, // 数据库读写是否分离 主从式有效 &#39;DB_MASTER_NUM&#39; =&amp;gt; 1, // 读写分离后 主服务器数量 &#39;DB_SLAVE_NO&#39; =&amp;gt; &#39;&#39;, // 指定从服务器序号  4:用navcat链接数据库，然新建一个数据库名，数据表，数据表中的添加字段，值，或导入sql文件</description>

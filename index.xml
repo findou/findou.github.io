@@ -1,15 +1,27 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Site</title>
+    <title>findou site</title>
     <link>https://findou.github.io/</link>
-    <description>Recent content on My New Hugo Site</description>
+    <description>Recent content on findou site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jul 2019 13:47:01 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jul 2019 15:59:37 +0800</lastBuildDate>
     
 	<atom:link href="https://findou.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Java基础语法学习笔记</title>
+      <link>https://findou.github.io/java/java1/</link>
+      <pubDate>Mon, 29 Jul 2019 15:59:37 +0800</pubDate>
+      
+      <guid>https://findou.github.io/java/java1/</guid>
+      <description>##1：变量 *变量需要先声明(declare)才能使用，说明变量的类型，赋予变量以特别名字 &amp;gt;数据类型 变量名称；
+##2: 常量 *final关键字可以用于声明属性（常量），方法和类 &amp;gt;final 数据类型 常量名 = 值;
+##3: 数据类型 *整数: byte:1个字节 -128 到 127 short:2个字节 -32,768 到 32767 int:4个字节 -2,147,483,648 到 2,147,483,647 long:8 个字节 -9,223,372,036,854,775,808 到 9,223,372,036, 854,775,807
+&amp;lsquo;long num =1L&amp;rsquo; *浮点数:float:4个字节 32位IEEEE-754 单精度范围 F double:8 个字节 64位IEEE-754 双精度范围 D *char类型:2 个字节 用于表示单个字符，用单引号括起来 &amp;lsquo;char a=&amp;lsquo;a&amp;rdquo; Unicode 的字符范围：’\u0000’（即为 0）到’\uffff’（即为 65,535） *boolean类型：java中的布尔值不能于整数类型或者其他类型互相转换 ##4: String string 定义一个字符串，是常量 *计算字符串长度 调用方法：字符串标识符.length(); *字符串比较 调用方法：字符串标识符.equals(); 调用方法：字符串标识符.equalsIgnoreCase(); ==比较两个对象在内存中的地址是否一样 *字符串连接 1 + 2 concat() *charAt()方法 charAt()方法的作用是按照索引值(规定字符串中第一个字符的索引值是 0，第二个字符的索引值是 1，依次类推)，获得字符串中的指定字符。例如： String s = &amp;ldquo;abc&amp;rdquo;; char c = s.</description>
+    </item>
     
     <item>
       <title>thinkphp 学习笔记1</title>
@@ -19,8 +31,8 @@
       <guid>https://findou.github.io/post/blog1/</guid>
       <description>1：将下载的ThinkPHP文件放到网站根目录下
 2：配置入口文件index.php
-// 定义应用目录 define(&amp;lsquo;APP_PATH&amp;rsquo;,&amp;lsquo;./Application/&amp;rsquo;);
-// 引入ThinkPHP入口文件 require &amp;lsquo;./ThinkPHP/ThinkPHP.php&amp;rsquo;;
+&amp;rdquo;&amp;rsquo; // 定义应用目录 define(&amp;lsquo;APP_PATH&amp;rsquo;,&amp;lsquo;./Application/&amp;rsquo;);
+// 引入ThinkPHP入口文件 require &amp;lsquo;./ThinkPHP/ThinkPHP.php&amp;rsquo;; &amp;ldquo;&amp;rsquo;
 定义应用目录中的app_path 配置为Application，在浏览器中打开网站，会自动在根目录下生成Application目录
 3：可以在\Application\Home\Conf\config.php目录下配置数据库，参考ThinkPHP\Conf\convention.php文件中的数据库配置方法，填入配置信息
 /* 数据库设置 */ &#39;DB_TYPE&#39; =&amp;gt; &#39;&#39;, // 数据库类型 &#39;DB_HOST&#39; =&amp;gt; &#39;&#39;, // 服务器地址 &#39;DB_NAME&#39; =&amp;gt; &#39;&#39;, // 数据库名 &#39;DB_USER&#39; =&amp;gt; &#39;&#39;, // 用户名 &#39;DB_PWD&#39; =&amp;gt; &#39;&#39;, // 密码 &#39;DB_PORT&#39; =&amp;gt; &#39;&#39;, // 端口 &#39;DB_PREFIX&#39; =&amp;gt; &#39;&#39;, // 数据库表前缀 &#39;DB_PARAMS&#39; =&amp;gt; array(), // 数据库连接参数 &#39;DB_DEBUG&#39; =&amp;gt; TRUE, // 数据库调试模式 开启后可以记录SQL日志 &#39;DB_FIELDS_CACHE&#39; =&amp;gt; true, // 启用字段缓存 &#39;DB_CHARSET&#39; =&amp;gt; &#39;utf8&#39;, // 数据库编码默认采用utf8 &#39;DB_DEPLOY_TYPE&#39; =&amp;gt; 0, // 数据库部署方式:0 集中式(单一服务器),1 分布式(主从服务器) &#39;DB_RW_SEPARATE&#39; =&amp;gt; false, // 数据库读写是否分离 主从式有效 &#39;DB_MASTER_NUM&#39; =&amp;gt; 1, // 读写分离后 主服务器数量 &#39;DB_SLAVE_NO&#39; =&amp;gt; &#39;&#39;, // 指定从服务器序号  4:用navcat链接数据库，然新建一个数据库名，数据表，数据表中的添加字段，值，或导入sql文件</description>

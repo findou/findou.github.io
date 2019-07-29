@@ -9,7 +9,7 @@
 
     <link rel="icon" href="/images/favicon.png" type="image/png">
 
-    <title>Categories :: findou site</title>
+    <title>Java基础语法学习笔记 :: findou site</title>
 
     
     <link href="/css/nucleus.css?1564390709" rel="stylesheet">
@@ -33,7 +33,7 @@
     </style>
     
   </head>
-  <body class="" data-url="/categories/">
+  <body class="" data-url="/java/java1/">
     <nav id="sidebar" class="">
 
 
@@ -74,8 +74,8 @@
   
     
     <li data-nav-id="/java/" title="Javas" class="dd-item 
+        parent
         
-        active
         
         ">
       <a href="/java/">
@@ -98,7 +98,7 @@
  
   
     
-      <li data-nav-id="/java/java1/" title="Java基础语法学习笔记" class="dd-item ">
+      <li data-nav-id="/java/java1/" title="Java基础语法学习笔记" class="dd-item active">
         <a href="/java/java1/">
         Java基础语法学习笔记
         
@@ -126,7 +126,7 @@
     
     <li data-nav-id="/post/" title="Posts" class="dd-item 
         
-        active
+        
         
         ">
       <a href="/post/">
@@ -209,7 +209,19 @@
                     
           
           
-            Categories
+            
+            
+          
+          
+            
+            
+          
+          
+            <a href='/'>findou site</a> > <a href='/java/'>Javas</a> > Java基础语法学习笔记
+          
+         
+          
+         
           
         
                  
@@ -234,7 +246,7 @@
           
             <h1>
               
-              Categories
+              Java基础语法学习笔记
             </h1>
           
 
@@ -242,17 +254,69 @@
 
 
 
+<p>##1：变量
+*变量需要先声明(declare)才能使用，说明变量的类型，赋予变量以特别名字
+&gt;数据类型 变量名称；</p>
 
+<p>##2: 常量
+*final关键字可以用于声明属性（常量），方法和类
+&gt;final 数据类型 常量名 = 值;</p>
 
-
-<ul>
-	
-</ul>
+<p>##3: 数据类型
+*整数: byte:1个字节 -128 到 127
+       short:2个字节 -32,768 到 32767
+       int:4个字节 -2,147,483,648 到 2,147,483,647
+       long:8 个字节 -9,223,372,036,854,775,808 到 9,223,372,036, 854,775,807<br />
+       &lsquo;long num =1L&rsquo;
+*浮点数:float:4个字节  32位IEEEE-754 单精度范围 F
+        double:8 个字节  64位IEEE-754 双精度范围 D
+*char类型:2 个字节  用于表示单个字符，用单引号括起来 &lsquo;char a=&lsquo;a&rdquo;  Unicode 的字符范围：’\u0000’（即为 0）到’\uffff’（即为 65,535）
+*boolean类型：java中的布尔值不能于整数类型或者其他类型互相转换
+##4: String
+string 定义一个字符串，是常量
+*计算字符串长度
+调用方法：字符串标识符.length();
+*字符串比较
+调用方法：字符串标识符.equals();
+调用方法：字符串标识符.equalsIgnoreCase();
+==比较两个对象在内存中的地址是否一样
+*字符串连接
+1 +
+2 concat()
+*charAt()方法
+charAt()方法的作用是按照索引值(规定字符串中第一个字符的索引值是 0，第二个字符的索引值是 1，依次类推)，获得字符串中的指定字符。例如：
+     String s = &ldquo;abc&rdquo;;
+     char c = s.charAt(1);
+则变量 c 的值是&rsquo;b&rsquo;。
+##用户输入操作
+Java 可以使用java.util包下的Scanner类来获取用户的输入。
+使用import java.util.Scanner;即可导入 Scanner，使用方法示例：
+&ldquo;&rsquo;
+import java.util.Scanner;
+public class ScannerDemo {
+    public static void main(String[] args) {
+        Scanner in=new Scanner(System.in);
+        //获取用户输入的一行数据  返回为字符串
+        String s = in.nextLine();
+        System.out.println(s);
+        //返回用户输入的int值
+        int i = in.nextInt();
+        System.out.println(i);
+        //循环读取String数据，当输入exit时退出循环
+        while (!in.hasNext(&ldquo;exit&rdquo;)) {
+            System.out.println(in.nextLine());
+        }
+        //关闭输入
+        in.close();
+    }
+}
+&ldquo;&rsquo;</p>
 
 
 <footer class=" footline" >
 	
 </footer>
+
 
         
         </div> 
@@ -285,8 +349,6 @@
             
                 
                     
-                        
-                        
                     
                 
                 
@@ -300,6 +362,7 @@
             
             
                 
+                    
                     
                 
                 
@@ -319,6 +382,9 @@
             
             
                 
+                    
+                        
+                        
                     
                 
                 
@@ -356,8 +422,10 @@
 	 
 	 
 		
+			<a class="nav nav-prev" href="/java/" title="Javas"> <i class="fa fa-chevron-left"></i></a>
 		
-			<a class="nav nav-next" href="/java/" title="Javas" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
+		
+			<a class="nav nav-next" href="/post/" title="Posts" style="margin-right: 0px;"><i class="fa fa-chevron-right"></i></a>
 		
 	
     </div>
@@ -388,3 +456,4 @@
 
   </body>
 </html>
+
